@@ -14,7 +14,6 @@ public class PrepaidActivationActions extends PrepaidActivationPage {
     public PrepaidActivationActions(WebDriver driver) {
         super(driver);
     }
-
     public void consultSingleScreen2(String msisdn){
         getDriver().switchTo().defaultContent();
         getConsult().click();

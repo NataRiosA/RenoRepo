@@ -16,7 +16,6 @@ public class LoginPortalCRMActions extends LoginPortalCRMPage {
         enter(dataExcelModels.getUser()).into(getUser());
         enter(dataExcelModels.getPassword()).into(getPassword());
     }
-
     public void clickOnLogin(DataExcelModels dataExcelModels){
         fillLogin(dataExcelModels);
         login();
