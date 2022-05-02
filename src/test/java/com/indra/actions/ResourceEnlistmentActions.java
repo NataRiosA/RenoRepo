@@ -38,6 +38,7 @@ public class ResourceEnlistmentActions extends DataExcelModels {
         int i = 0;
         while (!(i == total)) {
             uninstallCBSServicesActions.performLineCleaning(getUrlGatewayCBS(), getUrlGatewayMG(), listMsisdn.get(i));
+
             i++;
         }
     }

@@ -20,7 +20,7 @@ public class SanitySteps{
     DataExcelModels dataExcelModels = new DataExcelModels();
     LoginPortalCRMActions loginPortalCRMActions = new LoginPortalCRMActions(driver);
     PrepaidActivationActions prepaidActivationActions = new PrepaidActivationActions(driver);
-    RenoRepoContolPreciosActions cesionActions = new RenoRepoContolPreciosActions(driver);
+    RenoRepoContolPreciosActions renoRepoContolPreciosActions = new RenoRepoContolPreciosActions(driver);
 
 //-----------<Primer escenario>----------------
 
@@ -32,8 +32,8 @@ public class SanitySteps{
 
     @When("^Se hace la cesion de contrato de una linea pre a pos$")
     public void seHaceLaCesionDeContratoDeUnaLineaPreAPos() throws InterruptedException, AWTException, JSchException {
-         cesionActions.initialRute();
-         cesionActions.executeContractAssignment(dataExcelModels.getMsisdnPrepago(),dataExcelModels.getCedulaClientePrepago());
+        renoRepoContolPreciosActions.initialRute();
+        renoRepoContolPreciosActions.executeContractAssignment(dataExcelModels.getMsisdnPrepago(),dataExcelModels.getCedulaClientePrepago());
     }
 
     @Then("^Se deberia ver en pantalla unica la linea cedida pre$")

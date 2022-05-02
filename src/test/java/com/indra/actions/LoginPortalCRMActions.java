@@ -1,7 +1,6 @@
 package com.indra.actions;
 
 import com.indra.models.DataExcelModels;
-import com.indra.models.LoginPortalCRMModels;
 import com.indra.pages.LoginPortalCRMPage;
 import org.openqa.selenium.WebDriver;
 

@@ -12,8 +12,6 @@ public class RenoRepoContolPreciosActions extends CesionPortalCRMPage {
     public RenoRepoContolPreciosActions(WebDriver driver) {
         super(driver);
     }
-    DataExcelModels excelModels = new DataExcelModels();
-    ReadFileCSV readFileCSV = new ReadFileCSV();
 
     public void initialRute(){
         postSaleClick();
@@ -26,34 +24,17 @@ public class RenoRepoContolPreciosActions extends CesionPortalCRMPage {
         switchToIframe();
         writePhoneNumber(phonenumber);
         waitABit(2000);
-        writeNewClientNumber(imei);
-
-        waitABit(1000);
-        writeAdviserKey();
-
-        consultClick();
-        getEmail().waitUntilPresent();
-        writeVendorNumber();
         writeReasonForChange();
-        writeObsevations();
         selectBillingDepartment();
         selectBillingCity();
-        addressBillingClick();
-        selectVia();
-        writeAddress();
-        writeAddress2();
-        writeWithAddress();
-        bntAceptClick();
-        writeEmail();
-        selectPlan();
+        writeImei(imei);
+        waitABit(2000);
+        selectTienda();
         btnChangeContractClick();
         alertAcept();
-
-        waitABit(20000);
+        waitABit(10000);
         getMensajes().waitUntilPresent();
-
         System.out.println(getMensajes().getText());
-
     }
 
     public void postSaleClick(){
@@ -77,81 +58,38 @@ public class RenoRepoContolPreciosActions extends CesionPortalCRMPage {
         getPhoneNumber().sendKeys(Keys.TAB);
     }
 
-    public void selectAnnualRenewal(){
-        Select dropDownAnnualRenewal= new Select(getDriver().findElement(By.id("cesionContratoForm:InfoAnnualRenewal:planField")));
-        dropDownAnnualRenewal.selectByVisibleText("SI");
-    }
-
     public void switchToIframe(){
         WebElement iframe = getDriver().findElement(By.id("iframe"));
         getDriver().switchTo().frame(iframe);
     }
 
-    public void writeVendorNumber(){
-        enter("10960370").into(getVendedor());
+
+    public void writeImei(String imei){
+        enter(imei).into(getImei());
     }
 
-    public void writeNewClientNumber(String idClient){
-        enter(idClient).into(getNewSudId());
-    }
-
-    public void consultClick(){
-        getBtnConsultar().click();
-    }
 
     public void writeReasonForChange(){
-        enter("Prueba Cesion Automatizada QA").into(getMotivo());
+        enter("Prueba reno-repo").into(getMotivo());
     }
 
-    public void writeObsevations(){
-        enter("Prueba Cesion Automatizada QA").into(getObservation());
-    }
 
     public void selectBillingDepartment(){
-        Select dropDownBillingDepartment= new Select(getDriver().findElement(By.xpath("//select[@name='cesionContratoForm:deptoField:j_id202']")));
-        dropDownBillingDepartment.selectByValue("6");
+        Select dropDownBillingDepartment= new Select(getDriver().findElement(By.id("imeiChangeNewForm:deptoField:j_id400")));
+        dropDownBillingDepartment.selectByValue("28");
     }
 
     public void selectBillingCity(){
         waitABit(1000);
-        Select dropDownBillingDepartment= new Select(getDriver().findElement(By.xpath("//select[@name='cesionContratoForm:ciudadField:j_id216']")));
-        dropDownBillingDepartment.selectByValue("1241");
+        Select dropDownBillingDepartment= new Select(getDriver().findElement(By.id("imeiChangeNewForm:ciudadField:j_id414")));
+        dropDownBillingDepartment.selectByValue("1");
     }
 
-    public void addressBillingClick(){
-        getDireccionFacturacion().click();
+    public void selectTienda(){
+        Select dropDownVia= new Select(getDriver().findElement(By.id("imeiChangeNewForm:tiendaField:j_id428")));
+        dropDownVia.selectByValue("949");
     }
 
-    public void selectVia(){
-        Select dropDownVia= new Select(getDriver().findElement(By.xpath("//div[@class='tigo_address_block_locate']/select")));
-        dropDownVia.selectByValue("Avenida");
-    }
-
-    public void writeAddress(){
-
-        enter("45").into(getCallenumero());
-    }
-
-    public void writeAddress2(){
-        enter("16").into(getCallenumero2());
-    }
-
-    public void writeWithAddress(){
-        enter("36").into(getWithAddress());
-    }
-
-    public void bntAceptClick(){
-        getBtnAceptar().click();
-    }
-
-    public void writeEmail(){
-        enter("pruebaAutomatizadaQA@gmail.com").into(getEmail());
-    }
-
-    public void selectPlan(){
-        Select dropDownPlan= new Select(getDriver().findElement(By.xpath("//select[@name='cesionContratoForm:j_id256']")));
-        dropDownPlan.selectByValue("739");
-    }
 
     public void btnChangeContractClick(){
         waitABit(1000);
@@ -160,20 +98,13 @@ public class RenoRepoContolPreciosActions extends CesionPortalCRMPage {
         JavascriptExecutor js = (JavascriptExecutor) getDriver();
         js.executeScript("window.scrollBy(0,420)"); //Scroll vertically down by 1000 pixels
 
-        WebElement inventoryAllocation = getDriver().findElement(By.xpath("//*[@id='cesionContratoForm:bntPlanChange']"));
+        WebElement inventoryAllocation = getDriver().findElement(By.id("imeiChangeNewForm:j_id342"));
         actions.moveToElement(inventoryAllocation).click().build().perform();
     }
 
-    public void alertAcept(){
+    public void alertAcept() {
         Alert alert = getDriver().switchTo().alert();
         alert.accept();
+
     }
-    public void writeAdviserKey(){
-        enter(readFileCSV.getToken()).into(getCajonClaveAsesor());
-        getCajonClaveAsesor().sendKeys(Keys.TAB);
-        waitABit(1000);
-    }
-
-
-
 }
