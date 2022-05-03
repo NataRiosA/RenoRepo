@@ -5,8 +5,8 @@ import net.serenitybdd.core.pages.PageObject;
 import net.serenitybdd.core.pages.WebElementFacade;
 import org.openqa.selenium.WebDriver;
 
-public class CesionPortalCRMPage extends PageObject {
-    public CesionPortalCRMPage(WebDriver driver) {
+public class RenoRepoControlPreciosPage extends PageObject {
+    public RenoRepoControlPreciosPage(WebDriver driver) {
         super(driver);
     }
 
@@ -32,7 +32,7 @@ public class CesionPortalCRMPage extends PageObject {
     @FindBy(id ="imeiChangeNewForm:reasonField:reason" )
     WebElementFacade motivo;
 
-    @FindBy(xpath = "/html/body/form/table/tbody/tr/td[1]/span/span[2]/table[2]/tbody/tr[3]/td/ul/li")
+    @FindBy(xpath = "(//span[@id='imeiChangeNewForm:panelActionButtons']//table)[2]/tbody[1]/tr[4]/td[1]")//(xpath = "/html/body/form/table/tbody/tr/td[1]/span/span[2]/table[2]/tbody/tr[3]/td/ul/li")
     WebElementFacade mensajes;
 
     public WebElementFacade getMensajes() {

@@ -7,11 +7,12 @@ public class DataExcelModels {
     ReadFileXLSXActions fileXLSX = new ReadFileXLSXActions();
 
     String urlCRM;
-    String imei;
-    String msisdnPost;
-
     String user;
     String password;
+
+    String identificacion;
+    String imei;
+    String msisdnPost;
 
 
     public String getImei() {
@@ -44,5 +45,11 @@ public class DataExcelModels {
         fileXLSX.readFileExcel();
         password = fileXLSX.excelArray.get(1).get(2);
         return password;
+    }
+
+    public String getIdentificacion() {
+        fileXLSX.readFileExcel();
+        identificacion = fileXLSX.excelArray.get(3).get(0);
+        return identificacion;
     }
 }

@@ -20,11 +20,13 @@ public class SanitySteps{
     DataExcelModels dataExcelModels = new DataExcelModels();
     LoginPortalCRMActions loginPortalCRMActions = new LoginPortalCRMActions(driver);
     PrepaidActivationActions prepaidActivationActions = new PrepaidActivationActions(driver);
-    RenoRepoContolPreciosActions renoRepoContolPreciosActions = new RenoRepoContolPreciosActions(driver);
+    RenoRepoControlPreciosActions renoRepoControlPreciosActions = new RenoRepoControlPreciosActions(driver);
+    PagoEquiposActions pagoEquiposActions = new PagoEquiposActions(driver);
+    ConsultarLineaActions consultarLineaActions = new ConsultarLineaActions(driver);
 
 //-----------<Primer escenario>----------------
 
-    @Given("^Se ingresa al portal CRM para activacion$")
+/*    @Given("^Se ingresa al portal CRM para activacion$")
     public void seIngresaAlPortalCRMParaActivacion() {
         driver.get(dataExcelModels.getUrlCRM());
         loginPortalCRMActions.clickOnLogin(dataExcelModels);
@@ -32,14 +34,43 @@ public class SanitySteps{
 
     @When("^Se hace la cesion de contrato de una linea pre a pos$")
     public void seHaceLaCesionDeContratoDeUnaLineaPreAPos() throws InterruptedException, AWTException, JSchException {
-        renoRepoContolPreciosActions.initialRute();
-        renoRepoContolPreciosActions.executeContractAssignment(dataExcelModels.getMsisdnPost(),dataExcelModels.getImei());
+        renoRepoControlPreciosActions.initialRute();
+        renoRepoControlPreciosActions.executeContractAssignment(dataExcelModels.getMsisdnPost(),dataExcelModels.getImei());
     }
 
     @Then("^Se deberia ver en pantalla unica la linea cedida pre$")
     public void seDeberiaVerEnPantallaUnicaLaLineaCedidaPre() {
         prepaidActivationActions.consultSingleScreen2(dataExcelModels.getMsisdnPost());
+    }*/
+
+
+
+    @Given("^Se ingresa al portal CRM$")
+    public void seIngresaAlPortalCRM() {
+        //driver.get(dataExcelModels.getUrlCRM());
+        //loginPortalCRMActions.clickOnLogin(dataExcelModels);
     }
+
+    @When("^se hace la posventa reno repo$")
+    public void seHaceLaPosventaRenoRepo() throws JSchException, InterruptedException, AWTException {
+//        renoRepoControlPreciosActions.initialRute();
+//        renoRepoControlPreciosActions.ejecutaLaRenoRepo(dataExcelModels.getMsisdnPost(),dataExcelModels.getImei());
+//        consultarLineaActions.consultarEnPantallaUnica(dataExcelModels.getMsisdnPost(),"");
+    }
+
+    @When("^se hace el pago del equipo$")
+    public void seHaceElPagoDelEquipo() {
+//       pagoEquiposActions.rutaInicial();
+//       pagoEquiposActions.pagarEquipo(dataExcelModels.getIdentificacion(),dataExcelModels.getMsisdnPost(),renoRepoControlPreciosActions.idItem);
+    }
+
+    @Then("^se deberia ver el resultado de la consulta$")
+    public void seDeberiaVerElResultadoDeLaConsulta() throws JSchException, InterruptedException, AWTException {
+       //consultarLineaActions.consultarEnPantallaUnicaResultadoFinal(dataExcelModels.getMsisdnPost(),dataExcelModels.getImei());
+        RenoRepoEjecucionMasivaActions masivaActions = new RenoRepoEjecucionMasivaActions();
+        masivaActions.ciclo();
+    }
+
 
 }
 

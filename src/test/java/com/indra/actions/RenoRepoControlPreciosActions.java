@@ -1,17 +1,18 @@
 package com.indra.actions;
 
-import com.indra.models.DataExcelModels;
-import com.indra.pages.CesionPortalCRMPage;
+import com.indra.pages.RenoRepoControlPreciosPage;
 import com.jcraft.jsch.JSchException;
 import org.openqa.selenium.*;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.Select;
 
 import java.awt.*;
-public class RenoRepoContolPreciosActions extends CesionPortalCRMPage {
-    public RenoRepoContolPreciosActions(WebDriver driver) {
+public class RenoRepoControlPreciosActions extends RenoRepoControlPreciosPage {
+    public String idItem="";
+    public RenoRepoControlPreciosActions(WebDriver driver) {
         super(driver);
     }
+
 
     public void initialRute(){
         postSaleClick();
@@ -20,7 +21,13 @@ public class RenoRepoContolPreciosActions extends CesionPortalCRMPage {
         renoRepoClick();
     }
 
-    public void executeContractAssignment(String phonenumber, String imei) throws InterruptedException, AWTException, JSchException {
+    public void secondRute(){
+        postSaleClick();
+        renoRepoClick();
+    }
+
+
+    public void ejecutaLaRenoRepo(String phonenumber, String imei) throws InterruptedException, AWTException, JSchException {
         switchToIframe();
         writePhoneNumber(phonenumber);
         writeReasonForChange();
@@ -35,8 +42,14 @@ public class RenoRepoContolPreciosActions extends CesionPortalCRMPage {
         btnChangeContractClick();
         alertAcept();
         waitABit(5000);
+
+       /* WebElement idItemLabel = getDriver().findElement(By.xpath("(//span[@id='imeiChangeNewForm:panelActionButtons']//table)[2]/tbody[1]/tr[4]/td[1]"));
+        System.out.println("---->  "+idItemLabel.getText());
+        idItem = idItemLabel.getText();*/
         getMensajes().waitUntilPresent();
+        idItem = getMensajes().getText();
         System.out.println(getMensajes().getText());
+        waitABit(2000);
     }
 
     public void postSaleClick(){

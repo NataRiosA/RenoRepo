@@ -7,10 +7,10 @@ import org.junit.runner.RunWith;
 
 @RunWith(CucumberWithSerenity.class)
 @CucumberOptions(
-        features = "src/test/resources/features/execute.feature"
+        features = "src/test/resources/features/pagarEquipo.feature"
         ,glue = "com.indra.steps_definitions"
         ,snippets = SnippetType.CAMELCASE
-        //,tags="@portalNintendo"
+        ,tags=""
 )
 public class SanityRunners {
 }
