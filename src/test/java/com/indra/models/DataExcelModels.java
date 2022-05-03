@@ -6,44 +6,43 @@ public class DataExcelModels {
 
     ReadFileXLSXActions fileXLSX = new ReadFileXLSXActions();
 
-    String imei;
     String urlCRM;
-    String cedulaClientePrepago;
-    String msisdnPrepago;
+    String imei;
+    String msisdnPost;
 
     String user;
     String password;
 
 
-    public String getCedulaClientePrepago() {
+    public String getImei() {
         fileXLSX.readFileExcel();
-        cedulaClientePrepago = fileXLSX.excelArray.get(8).get(1);
-        return cedulaClientePrepago;
+        imei = fileXLSX.excelArray.get(3).get(2);
+        return imei;
     }
 
-    public String getMsisdnPrepago() {
+    public String getMsisdnPost() {
         fileXLSX.readFileExcel();
-        msisdnPrepago = fileXLSX.excelArray.get(8).get(2);
-        return msisdnPrepago;
+        msisdnPost = fileXLSX.excelArray.get(3).get(1);
+        return msisdnPost;
     }
 
 
     public String getUrlCRM() {
         fileXLSX.readFileExcel();
-        urlCRM = fileXLSX.excelArray.get(0).get(1);
+        urlCRM = fileXLSX.excelArray.get(1).get(0);
         return urlCRM;
     }
 
 
     public String getUser() {
         fileXLSX.readFileExcel();
-        user = fileXLSX.excelArray.get(1).get(5);
+        user = fileXLSX.excelArray.get(1).get(1);
         return user;
     }
 
     public String getPassword() {
         fileXLSX.readFileExcel();
-        password = fileXLSX.excelArray.get(1).get(6);
+        password = fileXLSX.excelArray.get(1).get(2);
         return password;
     }
 }

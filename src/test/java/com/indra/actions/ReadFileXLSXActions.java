@@ -16,10 +16,10 @@ public class ReadFileXLSXActions {
     public void readFileExcel(){
         try {
 
-            FileInputStream f = new FileInputStream("src/test/resources/config_data/data.xlsx");
+            FileInputStream f = new FileInputStream("src/test/resources/config_data/dataReno-Repo.xlsx");
 
             XSSFWorkbook libro = new XSSFWorkbook(f);
-            XSSFSheet hoja = libro.getSheetAt(1);
+            XSSFSheet hoja = libro.getSheetAt(0);
             Iterator<Row> filas = hoja.iterator();
             Iterator<Cell> celdas;
             Row fila;

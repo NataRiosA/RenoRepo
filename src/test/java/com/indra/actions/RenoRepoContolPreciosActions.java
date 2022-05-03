@@ -23,16 +23,18 @@ public class RenoRepoContolPreciosActions extends CesionPortalCRMPage {
     public void executeContractAssignment(String phonenumber, String imei) throws InterruptedException, AWTException, JSchException {
         switchToIframe();
         writePhoneNumber(phonenumber);
-        waitABit(2000);
         writeReasonForChange();
-        selectBillingDepartment();
-        selectBillingCity();
-        writeImei(imei);
         waitABit(2000);
+        selectBillingDepartment();
+        waitABit(2000);
+        selectBillingCity();
         selectTienda();
+        waitABit(2000);
+        writeImei(imei);
+        waitABit(10000);
         btnChangeContractClick();
         alertAcept();
-        waitABit(10000);
+        waitABit(5000);
         getMensajes().waitUntilPresent();
         System.out.println(getMensajes().getText());
     }
@@ -58,16 +60,15 @@ public class RenoRepoContolPreciosActions extends CesionPortalCRMPage {
         getPhoneNumber().sendKeys(Keys.TAB);
     }
 
+    public void writeImei(String imei){
+        enter(imei).into(getImei());
+        getImei().sendKeys(Keys.TAB);
+    }
+
     public void switchToIframe(){
         WebElement iframe = getDriver().findElement(By.id("iframe"));
         getDriver().switchTo().frame(iframe);
     }
-
-
-    public void writeImei(String imei){
-        enter(imei).into(getImei());
-    }
-
 
     public void writeReasonForChange(){
         enter("Prueba reno-repo").into(getMotivo());
@@ -75,18 +76,18 @@ public class RenoRepoContolPreciosActions extends CesionPortalCRMPage {
 
 
     public void selectBillingDepartment(){
-        Select dropDownBillingDepartment= new Select(getDriver().findElement(By.id("imeiChangeNewForm:deptoField:j_id400")));
+        Select dropDownBillingDepartment= new Select(getDriver().findElement(By.name("imeiChangeNewForm:deptoField:j_id400")));
         dropDownBillingDepartment.selectByValue("28");
     }
 
     public void selectBillingCity(){
         waitABit(1000);
-        Select dropDownBillingDepartment= new Select(getDriver().findElement(By.id("imeiChangeNewForm:ciudadField:j_id414")));
+        Select dropDownBillingDepartment= new Select(getDriver().findElement(By.name("imeiChangeNewForm:ciudadField:j_id414")));
         dropDownBillingDepartment.selectByValue("1");
     }
 
     public void selectTienda(){
-        Select dropDownVia= new Select(getDriver().findElement(By.id("imeiChangeNewForm:tiendaField:j_id428")));
+        Select dropDownVia= new Select(getDriver().findElement(By.name("imeiChangeNewForm:tiendaField:j_id428")));
         dropDownVia.selectByValue("949");
     }
 

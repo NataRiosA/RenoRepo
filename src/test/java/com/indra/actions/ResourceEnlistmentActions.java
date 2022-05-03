@@ -32,14 +32,14 @@ public class ResourceEnlistmentActions extends DataExcelModels {
     /**
      * ejemplo del metodo que ejecutaria los dos procesos para cada linea tanto los servicios del SOAP como los SP
      */
-    public void executeAllProcedures() throws SQLException {
-        enlistment();
-        int total = listMsisdn.size();
-        int i = 0;
-        while (!(i == total)) {
-            uninstallCBSServicesActions.performLineCleaning(getUrlGatewayCBS(), getUrlGatewayMG(), listMsisdn.get(i));
-
-            i++;
-        }
-    }
+//    public void executeAllProcedures() throws SQLException {
+//        enlistment();
+//        int total = listMsisdn.size();
+//        int i = 0;
+//        while (!(i == total)) {
+//            uninstallCBSServicesActions.performLineCleaning(getUrlGatewayCBS(), getUrlGatewayMG(), listMsisdn.get(i));
+//
+//            i++;
+//        }
+//    }
 }

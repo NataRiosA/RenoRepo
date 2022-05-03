@@ -26,16 +26,14 @@ public class CesionPortalCRMPage extends PageObject {
     @FindBy(id ="imeiChangeNewForm:msisdnField:msisdn" )
     WebElementFacade phoneNumber;
 
-    @FindBy(id ="imeiChangeNewForm:imeiField:imei\n" )
+    @FindBy(id ="imeiChangeNewForm:imeiField:imei" )
     WebElementFacade imei ;
 
     @FindBy(id ="imeiChangeNewForm:reasonField:reason" )
     WebElementFacade motivo;
 
-    @FindBy(xpath = "//*[@id='cesionContratoForm:panelAns']")
+    @FindBy(xpath = "/html/body/form/table/tbody/tr/td[1]/span/span[2]/table[2]/tbody/tr[3]/td/ul/li")
     WebElementFacade mensajes;
-
-
 
     public WebElementFacade getMensajes() {
         return mensajes;
