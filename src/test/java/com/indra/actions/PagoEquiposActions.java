@@ -21,6 +21,12 @@ public class PagoEquiposActions extends PagoEquiposPage {
 
     }
 
+    public void rutaSecundaria(){
+        switchToDefaultContent();
+        clickModuloConsultas();
+        clickModuloDePagos();
+    }
+
     public void pagarEquipo(String identificacion, String numeroCelular, String idItem){
         switchToFrame();
         getIdentificacion().waitUntilPresent();
@@ -55,7 +61,7 @@ public class PagoEquiposActions extends PagoEquiposPage {
                 scrollDown("800");
                 clickBotonPagoTotal();
 
-                waitABit(2000);
+                waitABit(5000);
             }
             else{
                 System.out.println("El ID Item "+idItem+" no coincide con el que se debe pagar");

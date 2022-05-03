@@ -23,6 +23,9 @@ public class SanitySteps{
     RenoRepoControlPreciosActions renoRepoControlPreciosActions = new RenoRepoControlPreciosActions(driver);
     PagoEquiposActions pagoEquiposActions = new PagoEquiposActions(driver);
     ConsultarLineaActions consultarLineaActions = new ConsultarLineaActions(driver);
+    ReadFileXLSXActions readExcelFile = new ReadFileXLSXActions();
+
+    RenoRepoEjecucionMasivaActions masivaActions = new RenoRepoEjecucionMasivaActions(driver);
 
 //-----------<Primer escenario>----------------
 
@@ -47,19 +50,58 @@ public class SanitySteps{
 
     @Given("^Se ingresa al portal CRM$")
     public void seIngresaAlPortalCRM() {
-        //driver.get(dataExcelModels.getUrlCRM());
-        //loginPortalCRMActions.clickOnLogin(dataExcelModels);
+        driver.get(dataExcelModels.getUrlCRM());
+        loginPortalCRMActions.clickOnLogin(dataExcelModels);
     }
 
     @When("^se hace la posventa reno repo$")
     public void seHaceLaPosventaRenoRepo() throws JSchException, InterruptedException, AWTException {
-//        renoRepoControlPreciosActions.initialRute();
-//        renoRepoControlPreciosActions.ejecutaLaRenoRepo(dataExcelModels.getMsisdnPost(),dataExcelModels.getImei());
-//        consultarLineaActions.consultarEnPantallaUnica(dataExcelModels.getMsisdnPost(),"");
+        int lineasOK=0;
+        readExcelFile.readFileExcel();
+
+        String identificacion = readExcelFile.excelArray.get(3).get(0);
+        String msisdn = readExcelFile.excelArray.get(3).get(1);
+        String imei = readExcelFile.excelArray.get(3).get(2);
+
+        renoRepoControlPreciosActions.initialRute();
+        renoRepoControlPreciosActions.ejecutaLaRenoRepo(msisdn,imei);
+        consultarLineaActions.consultarEnPantallaUnica(msisdn,"");
+
+        pagoEquiposActions.rutaInicial();
+        pagoEquiposActions.pagarEquipo(identificacion,msisdn,renoRepoControlPreciosActions.idItem);
+        consultarLineaActions.consultarEnPantallaUnicaResultadoFinal(msisdn,imei);
+
+        System.out.println("linea ok = "+ String.valueOf(lineasOK));
+
+        for (int i= 4; i<readExcelFile.excelArray.size();i++){
+
+            identificacion = readExcelFile.excelArray.get(i).get(0);
+            msisdn = readExcelFile.excelArray.get(i).get(1);
+            imei = readExcelFile.excelArray.get(i).get(2);
+
+            renoRepoControlPreciosActions.secondRute();
+            renoRepoControlPreciosActions.ejecutaLaRenoRepo(msisdn,imei);
+            consultarLineaActions.consultarEnPantallaUnicaResultadoFinal(msisdn,"");
+
+            pagoEquiposActions.rutaSecundaria();
+            pagoEquiposActions.pagarEquipo(identificacion,msisdn,renoRepoControlPreciosActions.idItem);
+            consultarLineaActions.consultarEnPantallaUnicaResultadoFinal(msisdn,imei);
+            System.out.println("linea ok = "+ String.valueOf(lineasOK));
+        }
+
     }
 
     @When("^se hace el pago del equipo$")
     public void seHaceElPagoDelEquipo() {
+
+/*        renoRepoControlPreciosActions.initialRute();
+        renoRepoControlPreciosActions.ejecutaLaRenoRepo(dataExcelModels.getMsisdnPost(),dataExcelModels.getImei());
+        consultarLineaActions.consultarEnPantallaUnica(dataExcelModels.getMsisdnPost(),"");
+        pagoEquiposActions.rutaInicial();
+        pagoEquiposActions.pagarEquipo(dataExcelModels.getIdentificacion(),dataExcelModels.getMsisdnPost(),renoRepoControlPreciosActions.idItem);
+        consultarLineaActions.consultarEnPantallaUnicaResultadoFinal(dataExcelModels.getMsisdnPost(),dataExcelModels.getImei());*/
+
+
 //       pagoEquiposActions.rutaInicial();
 //       pagoEquiposActions.pagarEquipo(dataExcelModels.getIdentificacion(),dataExcelModels.getMsisdnPost(),renoRepoControlPreciosActions.idItem);
     }
@@ -67,8 +109,6 @@ public class SanitySteps{
     @Then("^se deberia ver el resultado de la consulta$")
     public void seDeberiaVerElResultadoDeLaConsulta() throws JSchException, InterruptedException, AWTException {
        //consultarLineaActions.consultarEnPantallaUnicaResultadoFinal(dataExcelModels.getMsisdnPost(),dataExcelModels.getImei());
-        RenoRepoEjecucionMasivaActions masivaActions = new RenoRepoEjecucionMasivaActions();
-        masivaActions.ciclo();
     }
 
 
