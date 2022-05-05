@@ -46,7 +46,7 @@ public class RenoRepoControlPreciosActions extends RenoRepoControlPreciosPage {
        /* WebElement idItemLabel = getDriver().findElement(By.xpath("(//span[@id='imeiChangeNewForm:panelActionButtons']//table)[2]/tbody[1]/tr[4]/td[1]"));
         System.out.println("---->  "+idItemLabel.getText());
         idItem = idItemLabel.getText();*/
-        getMensajes().waitUntilPresent();
+        getMensajes().waitUntilVisible();
         idItem = getMensajes().getText();
         System.out.println(getMensajes().getText());
         waitABit(2000);

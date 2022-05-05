@@ -25,29 +25,6 @@ public class SanitySteps{
     ConsultarLineaActions consultarLineaActions = new ConsultarLineaActions(driver);
     ReadFileXLSXActions readExcelFile = new ReadFileXLSXActions();
 
-    RenoRepoEjecucionMasivaActions masivaActions = new RenoRepoEjecucionMasivaActions(driver);
-
-//-----------<Primer escenario>----------------
-
-/*    @Given("^Se ingresa al portal CRM para activacion$")
-    public void seIngresaAlPortalCRMParaActivacion() {
-        driver.get(dataExcelModels.getUrlCRM());
-        loginPortalCRMActions.clickOnLogin(dataExcelModels);
-    }
-
-    @When("^Se hace la cesion de contrato de una linea pre a pos$")
-    public void seHaceLaCesionDeContratoDeUnaLineaPreAPos() throws InterruptedException, AWTException, JSchException {
-        renoRepoControlPreciosActions.initialRute();
-        renoRepoControlPreciosActions.executeContractAssignment(dataExcelModels.getMsisdnPost(),dataExcelModels.getImei());
-    }
-
-    @Then("^Se deberia ver en pantalla unica la linea cedida pre$")
-    public void seDeberiaVerEnPantallaUnicaLaLineaCedidaPre() {
-        prepaidActivationActions.consultSingleScreen2(dataExcelModels.getMsisdnPost());
-    }*/
-
-
-
     @Given("^Se ingresa al portal CRM$")
     public void seIngresaAlPortalCRM() {
         driver.get(dataExcelModels.getUrlCRM());
@@ -70,7 +47,7 @@ public class SanitySteps{
         pagoEquiposActions.rutaInicial();
         pagoEquiposActions.pagarEquipo(identificacion,msisdn,renoRepoControlPreciosActions.idItem);
         consultarLineaActions.consultarEnPantallaUnicaResultadoFinal(msisdn,imei);
-
+        lineasOK++;
         System.out.println("linea ok = "+ String.valueOf(lineasOK));
 
         for (int i= 4; i<readExcelFile.excelArray.size();i++){
@@ -87,6 +64,7 @@ public class SanitySteps{
             pagoEquiposActions.pagarEquipo(identificacion,msisdn,renoRepoControlPreciosActions.idItem);
             consultarLineaActions.consultarEnPantallaUnicaResultadoFinal(msisdn,imei);
             System.out.println("linea ok = "+ String.valueOf(lineasOK));
+            lineasOK++;
         }
 
     }

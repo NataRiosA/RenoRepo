@@ -1,35 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testsuite name="com.indra.runners.SanityRunners" tests="0" skipped="0" failures="0" errors="0" timestamp="1970-01-01T00:00:00" hostname="22LAP5CD1195R94" time="0.0">
   <properties/>
-  <system-out><![CDATA[15:48:14.168 [Test worker] DEBUG net.thucydides.core.util.PropertiesFileLocalPreferences - LOADING LOCAL PROPERTIES FROM C:\RenoRepo\serenity.properties 
-15:48:14.249 [Test worker] DEBUG net.thucydides.core.util.PropertiesFileLocalPreferences - LOADING LOCAL PROPERTIES FROM C:\RenoRepo\serenity.properties 
-15:48:14.250 [Test worker] DEBUG net.thucydides.core.util.PropertiesFileLocalPreferences - LOADING LOCAL PROPERTIES FROM C:\RenoRepo\serenity.properties 
-15:48:14.259 [Test worker] DEBUG net.thucydides.core.util.PropertiesFileLocalPreferences - webdriver.driver=firefox
-15:48:14.259 [Test worker] DEBUG net.thucydides.core.util.PropertiesFileLocalPreferences - serenity.console.colors=true
-15:48:14.259 [Test worker] DEBUG net.thucydides.core.util.PropertiesFileLocalPreferences - webdriver.gecko.driver=src/test/resources/drivers/geckodriver.exe
-15:48:14.259 [Test worker] DEBUG net.thucydides.core.util.PropertiesFileLocalPreferences - webdriver.base.url=http://10.69.60.77:8180/tigo-pos-web/index.jsp
-15:48:14.259 [Test worker] DEBUG net.thucydides.core.util.PropertiesFileLocalPreferences - serenity.project.name=Automatización Sanity Ambiente - Activacion Prepago
-15:48:14.259 [Test worker] DEBUG net.thucydides.core.util.PropertiesFileLocalPreferences - webdriver.wait.for.timeout=10000
-15:48:14.259 [Test worker] DEBUG net.thucydides.core.util.PropertiesFileLocalPreferences - serenity.use.unique.browser=true
-15:48:14.259 [Test worker] DEBUG net.thucydides.core.util.PropertiesFileLocalPreferences - webdriver.timeouts.implicitlywait=35000
-15:48:14.260 [Test worker] DEBUG net.thucydides.core.util.PropertiesFileLocalPreferences - serenity.take.screenshots=FOR_EACH_ACTION
-15:48:14.260 [Test worker] DEBUG net.thucydides.core.util.PropertiesFileLocalPreferences - serenity.browser.maximized=true
-15:48:14.260 [Test worker] DEBUG net.thucydides.core.util.PropertiesFileLocalPreferences - firefox.capability.marionette=true
-15:48:14.537 [Test worker] DEBUG net.thucydides.core.util.PropertiesFileLocalPreferences - LOADING LOCAL PROPERTIES FROM C:\RenoRepo\serenity.properties 
-15:48:14.582 [Test worker] DEBUG net.thucydides.core.util.PropertiesFileLocalPreferences - LOADING LOCAL PROPERTIES FROM C:\RenoRepo\serenity.properties 
-15:48:14.583 [Test worker] DEBUG net.thucydides.core.util.PropertiesFileLocalPreferences - LOADING LOCAL PROPERTIES FROM C:\RenoRepo\serenity.properties 
-15:48:14.584 [Test worker] DEBUG net.thucydides.core.util.PropertiesFileLocalPreferences - webdriver.driver=firefox
-15:48:14.584 [Test worker] DEBUG net.thucydides.core.util.PropertiesFileLocalPreferences - serenity.console.colors=true
-15:48:14.584 [Test worker] DEBUG net.thucydides.core.util.PropertiesFileLocalPreferences - webdriver.gecko.driver=src/test/resources/drivers/geckodriver.exe
-15:48:14.584 [Test worker] DEBUG net.thucydides.core.util.PropertiesFileLocalPreferences - webdriver.base.url=http://10.69.60.77:8180/tigo-pos-web/index.jsp
-15:48:14.584 [Test worker] DEBUG net.thucydides.core.util.PropertiesFileLocalPreferences - serenity.project.name=Automatización Sanity Ambiente - Activacion Prepago
-15:48:14.584 [Test worker] DEBUG net.thucydides.core.util.PropertiesFileLocalPreferences - webdriver.wait.for.timeout=10000
-15:48:14.584 [Test worker] DEBUG net.thucydides.core.util.PropertiesFileLocalPreferences - serenity.use.unique.browser=true
-15:48:14.585 [Test worker] DEBUG net.thucydides.core.util.PropertiesFileLocalPreferences - webdriver.timeouts.implicitlywait=35000
-15:48:14.585 [Test worker] DEBUG net.thucydides.core.util.PropertiesFileLocalPreferences - serenity.take.screenshots=FOR_EACH_ACTION
-15:48:14.585 [Test worker] DEBUG net.thucydides.core.util.PropertiesFileLocalPreferences - serenity.browser.maximized=true
-15:48:14.585 [Test worker] DEBUG net.thucydides.core.util.PropertiesFileLocalPreferences - firefox.capability.marionette=true
-15:48:14.589 [Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - ?[96m
+  <system-out><![CDATA[15:15:37.313 [Test worker] DEBUG net.thucydides.core.util.PropertiesFileLocalPreferences - LOADING LOCAL PROPERTIES FROM C:\RenoRepo\serenity.properties 
+15:15:37.464 [Test worker] DEBUG net.thucydides.core.util.PropertiesFileLocalPreferences - LOADING LOCAL PROPERTIES FROM C:\RenoRepo\serenity.properties 
+15:15:37.466 [Test worker] DEBUG net.thucydides.core.util.PropertiesFileLocalPreferences - LOADING LOCAL PROPERTIES FROM C:\RenoRepo\serenity.properties 
+15:15:37.482 [Test worker] DEBUG net.thucydides.core.util.PropertiesFileLocalPreferences - webdriver.driver=firefox
+15:15:37.482 [Test worker] DEBUG net.thucydides.core.util.PropertiesFileLocalPreferences - serenity.console.colors=true
+15:15:37.482 [Test worker] DEBUG net.thucydides.core.util.PropertiesFileLocalPreferences - webdriver.gecko.driver=src/test/resources/drivers/geckodriver.exe
+15:15:37.482 [Test worker] DEBUG net.thucydides.core.util.PropertiesFileLocalPreferences - webdriver.base.url=http://10.69.60.77:8180/tigo-pos-web/index.jsp
+15:15:37.482 [Test worker] DEBUG net.thucydides.core.util.PropertiesFileLocalPreferences - serenity.project.name=Automatización Sanity Ambiente - Activacion Prepago
+15:15:37.483 [Test worker] DEBUG net.thucydides.core.util.PropertiesFileLocalPreferences - webdriver.wait.for.timeout=10000
+15:15:37.483 [Test worker] DEBUG net.thucydides.core.util.PropertiesFileLocalPreferences - serenity.use.unique.browser=true
+15:15:37.483 [Test worker] DEBUG net.thucydides.core.util.PropertiesFileLocalPreferences - webdriver.timeouts.implicitlywait=35000
+15:15:37.483 [Test worker] DEBUG net.thucydides.core.util.PropertiesFileLocalPreferences - serenity.take.screenshots=FOR_EACH_ACTION
+15:15:37.483 [Test worker] DEBUG net.thucydides.core.util.PropertiesFileLocalPreferences - serenity.browser.maximized=true
+15:15:37.483 [Test worker] DEBUG net.thucydides.core.util.PropertiesFileLocalPreferences - firefox.capability.marionette=true
+15:15:37.980 [Test worker] DEBUG net.thucydides.core.util.PropertiesFileLocalPreferences - LOADING LOCAL PROPERTIES FROM C:\RenoRepo\serenity.properties 
+15:15:38.050 [Test worker] DEBUG net.thucydides.core.util.PropertiesFileLocalPreferences - LOADING LOCAL PROPERTIES FROM C:\RenoRepo\serenity.properties 
+15:15:38.051 [Test worker] DEBUG net.thucydides.core.util.PropertiesFileLocalPreferences - LOADING LOCAL PROPERTIES FROM C:\RenoRepo\serenity.properties 
+15:15:38.052 [Test worker] DEBUG net.thucydides.core.util.PropertiesFileLocalPreferences - webdriver.driver=firefox
+15:15:38.053 [Test worker] DEBUG net.thucydides.core.util.PropertiesFileLocalPreferences - serenity.console.colors=true
+15:15:38.053 [Test worker] DEBUG net.thucydides.core.util.PropertiesFileLocalPreferences - webdriver.gecko.driver=src/test/resources/drivers/geckodriver.exe
+15:15:38.053 [Test worker] DEBUG net.thucydides.core.util.PropertiesFileLocalPreferences - webdriver.base.url=http://10.69.60.77:8180/tigo-pos-web/index.jsp
+15:15:38.053 [Test worker] DEBUG net.thucydides.core.util.PropertiesFileLocalPreferences - serenity.project.name=Automatización Sanity Ambiente - Activacion Prepago
+15:15:38.053 [Test worker] DEBUG net.thucydides.core.util.PropertiesFileLocalPreferences - webdriver.wait.for.timeout=10000
+15:15:38.053 [Test worker] DEBUG net.thucydides.core.util.PropertiesFileLocalPreferences - serenity.use.unique.browser=true
+15:15:38.054 [Test worker] DEBUG net.thucydides.core.util.PropertiesFileLocalPreferences - webdriver.timeouts.implicitlywait=35000
+15:15:38.054 [Test worker] DEBUG net.thucydides.core.util.PropertiesFileLocalPreferences - serenity.take.screenshots=FOR_EACH_ACTION
+15:15:38.054 [Test worker] DEBUG net.thucydides.core.util.PropertiesFileLocalPreferences - serenity.browser.maximized=true
+15:15:38.054 [Test worker] DEBUG net.thucydides.core.util.PropertiesFileLocalPreferences - firefox.capability.marionette=true
+15:15:38.070 [Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - ?[96m
 
 -------------------------------------------------------------------------------------
      _______. _______ .______       _______ .__   __.  __  .___________.____    ____ 
@@ -46,9 +46,9 @@
  Learn Serenity BDD online at http://serenity-dojo.com                               
 -------------------------------------------------------------------------------------
 ?[0m
-15:48:14.593 [Test worker] DEBUG net.thucydides.core.steps.StepEventBus - Test suite started for story net.thucydides.core.model.Story@89416c93
-15:48:14.594 [Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - Test Suite Started: Reno Repo masivo
-15:48:14.645 [Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - 
+15:15:38.077 [Test worker] DEBUG net.thucydides.core.steps.StepEventBus - Test suite started for story net.thucydides.core.model.Story@89416c93
+15:15:38.079 [Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - Test Suite Started: Reno Repo masivo
+15:15:38.151 [Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - 
  _____ _____ ____ _____   ____ _____  _    ____ _____ _____ ____  
 |_   _| ____/ ___|_   _| / ___|_   _|/ \  |  _ \_   _| ____|  _ \ 
   | | |  _| \___ \ | |   \___ \ | | / _ \ | |_) || | |  _| | | | |
@@ -58,57 +58,54 @@
 
 TEST STARTED: reno-repo control
 -------------------------------------------------------------------(reno-repo-masivo;reno-repo-control)
-15:48:14.690 [Test worker] DEBUG net.thucydides.core.requirements.model.cucumber.CucumberParser - Found no Cucumber 4.2.6 class cucumber.runtime.model.FeatureLoader try Cucumber 4.2.0 
-15:48:14.690 [Test worker] DEBUG net.thucydides.core.requirements.model.cucumber.CucumberParser - Found no Cucumber 4.2.0 class cucumber.runtime.model.FeatureLoader try Cucumber 2.x.x 
-15:48:14.697 [Test worker] DEBUG net.thucydides.core.requirements.model.cucumber.CucumberParser - Found no Cucumber 4.2.6 class cucumber.runtime.model.FeatureLoader try Cucumber 4.2.0 
-15:48:14.697 [Test worker] DEBUG net.thucydides.core.requirements.model.cucumber.CucumberParser - Found no Cucumber 4.2.0 class cucumber.runtime.model.FeatureLoader try Cucumber 2.x.x 
-15:50:00.948 [Test worker] DEBUG net.thucydides.core.reports.ReportService - Reporting formats: [JSON, HTML]
-15:50:01.002 [Test worker] DEBUG net.thucydides.core.reports.ReportService - Reporting formats: [JSON, HTML]
-15:50:01.011 [Test worker] DEBUG net.thucydides.core.reports.ReportService - Generating reports for 1 test outcomes using: net.thucydides.core.reports.json.JSONTestOutcomeReporter@4d52c5b1
-15:50:01.013 [pool-1-thread-1] DEBUG net.thucydides.core.reports.ReportService - Processing test outcome Reno Repo masivo:reno-repo control
-15:50:01.013 [pool-1-thread-1] DEBUG net.thucydides.core.reports.ReportService - net.thucydides.core.reports.json.JSONTestOutcomeReporter@4d52c5b1: Generating report for test outcome: Reno Repo masivo:reno-repo control
-15:50:01.021 [pool-1-thread-1] DEBUG net.thucydides.core.reports.json.JSONTestOutcomeReporter - Generating JSON report for reno-repo control to file C:\RenoRepo\target\site\serenity\67b65830c744fbcf5c8c31d8a9aa0b67730b2631feefb4efc803ed909b44d9e6.json (using temp file C:\RenoRepo\target\site\serenity\67b65830c744fbcf5c8c31d8a9aa0b67730b2631feefb4efc803ed909b44d9e6.jsona5cb0f5f-e5da-41c2-8d4a-a9854c39f60d)
-15:50:01.053 [pool-1-thread-1] DEBUG net.thucydides.core.reports.ReportService - Processing test outcome Reno Repo masivo:reno-repo control done
-15:50:01.053 [Test worker] DEBUG net.thucydides.core.reports.ReportService - Shutting down executor service
-15:50:01.053 [Test worker] DEBUG net.thucydides.core.reports.ReportService - Reports generated in: 42 ms
-15:50:01.053 [Test worker] DEBUG net.thucydides.core.reports.ReportService - Generating reports for 1 test outcomes using: net.thucydides.core.reports.html.HtmlAcceptanceTestReporter@689804e1
-15:50:01.053 [pool-2-thread-1] DEBUG net.thucydides.core.reports.ReportService - Processing test outcome Reno Repo masivo:reno-repo control
-15:50:01.053 [pool-2-thread-1] DEBUG net.thucydides.core.reports.ReportService - net.thucydides.core.reports.html.HtmlAcceptanceTestReporter@689804e1: Generating report for test outcome: Reno Repo masivo:reno-repo control
-15:50:01.054 [pool-2-thread-1] DEBUG net.thucydides.core.reports.html.HtmlAcceptanceTestReporter - GENERATE TEST OUTCOME REPORT FOR reno-repo control in 67b65830c744fbcf5c8c31d8a9aa0b67730b2631feefb4efc803ed909b44d9e6
-15:50:01.068 [pool-2-thread-1] DEBUG net.thucydides.core.requirements.model.cucumber.CucumberParser - Found no Cucumber 4.2.6 class cucumber.runtime.model.FeatureLoader try Cucumber 4.2.0 
-15:50:01.069 [pool-2-thread-1] DEBUG net.thucydides.core.requirements.model.cucumber.CucumberParser - Found no Cucumber 4.2.0 class cucumber.runtime.model.FeatureLoader try Cucumber 2.x.x 
-15:50:01.071 [pool-2-thread-1] DEBUG net.thucydides.core.requirements.model.cucumber.CucumberParser - Found no Cucumber 4.2.6 class cucumber.runtime.model.FeatureLoader try Cucumber 4.2.0 
-15:50:01.072 [pool-2-thread-1] DEBUG net.thucydides.core.requirements.model.cucumber.CucumberParser - Found no Cucumber 4.2.0 class cucumber.runtime.model.FeatureLoader try Cucumber 2.x.x 
-15:50:01.073 [pool-2-thread-1] DEBUG net.thucydides.core.requirements.RequirementsTagProvider -  found:[Requirement{name='Sanity limpieza y aprovisionamiento de recursos', type='feature' parent = 'null', cardNumber='null'}, Requirement{name='Reno Repo masivo', type='feature' parent = 'null', cardNumber='null'}]
-15:50:01.077 [pool-2-thread-1] DEBUG net.thucydides.core.requirements.BaseRequirementsService - Requirement found for test outcome reno-repo control-[]: Optional[Requirement{name='Reno Repo masivo', type='feature' parent = 'null', cardNumber='null'}]
-15:50:01.078 [pool-2-thread-1] DEBUG net.thucydides.core.requirements.BaseRequirementsService - Requirement found for test outcome reno-repo control-[]: Optional[Requirement{name='Reno Repo masivo', type='feature' parent = 'null', cardNumber='null'}]
-15:50:01.160 [pool-2-thread-1] DEBUG net.thucydides.core.requirements.BaseRequirementsService - Requirement found for test outcome reno-repo control-[]: Optional[Requirement{name='Reno Repo masivo', type='feature' parent = 'null', cardNumber='null'}]
-15:50:01.161 [pool-2-thread-1] DEBUG net.thucydides.core.requirements.BaseRequirementsService - Requirement found for test outcome reno-repo control-[]: Optional[Requirement{name='Reno Repo masivo', type='feature' parent = 'null', cardNumber='null'}]
-15:50:01.234 [pool-2-thread-1] DEBUG net.thucydides.core.reports.html.HtmlAcceptanceTestReporter - Generating report in 67b65830c744fbcf5c8c31d8a9aa0b67730b2631feefb4efc803ed909b44d9e6_screenshots.html
-15:50:01.486 [pool-2-thread-1] DEBUG net.thucydides.core.reports.html.HtmlAcceptanceTestReporter - Generated report 67b65830c744fbcf5c8c31d8a9aa0b67730b2631feefb4efc803ed909b44d9e6_screenshots.html in 253 ms
-15:50:01.487 [pool-2-thread-1] DEBUG net.thucydides.core.reports.html.HtmlAcceptanceTestReporter - GENERATING HTML REPORT FOR Reno Repo masivo:reno-repo control in 67b65830c744fbcf5c8c31d8a9aa0b67730b2631feefb4efc803ed909b44d9e6.html in directory C:\RenoRepo\target\site\serenity  
-15:50:01.489 [pool-2-thread-1] DEBUG net.thucydides.core.reports.html.HtmlAcceptanceTestReporter - Generating report in 67b65830c744fbcf5c8c31d8a9aa0b67730b2631feefb4efc803ed909b44d9e6.html
-15:50:01.836 [pool-2-thread-1] DEBUG net.thucydides.core.reports.html.HtmlAcceptanceTestReporter - Generated report 67b65830c744fbcf5c8c31d8a9aa0b67730b2631feefb4efc803ed909b44d9e6.html in 347 ms
-15:50:01.836 [pool-2-thread-1] DEBUG net.thucydides.core.reports.ReportService - Processing test outcome Reno Repo masivo:reno-repo control done
-15:50:01.837 [Test worker] DEBUG net.thucydides.core.reports.ReportService - Shutting down executor service
-15:50:01.837 [Test worker] DEBUG net.thucydides.core.reports.ReportService - Reports generated in: 784 ms
-15:50:01.912 [Test worker] DEBUG net.serenitybdd.core.photography.Darkroom - Closing darkroom
-15:50:01.912 [Darkroom Processing Line] DEBUG net.serenitybdd.core.photography.DarkroomProcessingLine - Darkroom processing line shutting down
+15:15:38.237 [Test worker] DEBUG net.thucydides.core.requirements.model.cucumber.CucumberParser - Found no Cucumber 4.2.6 class cucumber.runtime.model.FeatureLoader try Cucumber 4.2.0 
+15:15:38.238 [Test worker] DEBUG net.thucydides.core.requirements.model.cucumber.CucumberParser - Found no Cucumber 4.2.0 class cucumber.runtime.model.FeatureLoader try Cucumber 2.x.x 
+15:15:38.255 [Test worker] DEBUG net.thucydides.core.requirements.model.cucumber.CucumberParser - Found no Cucumber 4.2.6 class cucumber.runtime.model.FeatureLoader try Cucumber 4.2.0 
+15:15:38.256 [Test worker] DEBUG net.thucydides.core.requirements.model.cucumber.CucumberParser - Found no Cucumber 4.2.0 class cucumber.runtime.model.FeatureLoader try Cucumber 2.x.x 
+15:17:58.458 [Test worker] DEBUG net.thucydides.core.reports.ReportService - Reporting formats: [JSON, HTML]
+15:17:58.649 [Test worker] DEBUG net.thucydides.core.reports.ReportService - Reporting formats: [JSON, HTML]
+15:17:58.691 [Test worker] DEBUG net.thucydides.core.reports.ReportService - Generating reports for 1 test outcomes using: net.thucydides.core.reports.json.JSONTestOutcomeReporter@599f5ef4
+15:17:58.699 [pool-1-thread-1] DEBUG net.thucydides.core.reports.ReportService - Processing test outcome Reno Repo masivo:reno-repo control
+15:17:58.700 [pool-1-thread-1] DEBUG net.thucydides.core.reports.ReportService - net.thucydides.core.reports.json.JSONTestOutcomeReporter@599f5ef4: Generating report for test outcome: Reno Repo masivo:reno-repo control
+15:17:58.706 [pool-1-thread-1] DEBUG net.thucydides.core.reports.json.JSONTestOutcomeReporter - Generating JSON report for reno-repo control to file C:\RenoRepo\target\site\serenity\67b65830c744fbcf5c8c31d8a9aa0b67730b2631feefb4efc803ed909b44d9e6.json (using temp file C:\RenoRepo\target\site\serenity\67b65830c744fbcf5c8c31d8a9aa0b67730b2631feefb4efc803ed909b44d9e6.json19937716-8d20-4669-9a39-fdd0aba11d8f)
+15:17:58.780 [pool-1-thread-1] DEBUG net.thucydides.core.reports.ReportService - Processing test outcome Reno Repo masivo:reno-repo control done
+15:17:58.780 [Test worker] DEBUG net.thucydides.core.reports.ReportService - Shutting down executor service
+15:17:58.780 [Test worker] DEBUG net.thucydides.core.reports.ReportService - Reports generated in: 89 ms
+15:17:58.780 [Test worker] DEBUG net.thucydides.core.reports.ReportService - Generating reports for 1 test outcomes using: net.thucydides.core.reports.html.HtmlAcceptanceTestReporter@2689e732
+15:17:58.782 [pool-2-thread-1] DEBUG net.thucydides.core.reports.ReportService - Processing test outcome Reno Repo masivo:reno-repo control
+15:17:58.782 [pool-2-thread-1] DEBUG net.thucydides.core.reports.ReportService - net.thucydides.core.reports.html.HtmlAcceptanceTestReporter@2689e732: Generating report for test outcome: Reno Repo masivo:reno-repo control
+15:17:58.782 [pool-2-thread-1] DEBUG net.thucydides.core.reports.html.HtmlAcceptanceTestReporter - GENERATE TEST OUTCOME REPORT FOR reno-repo control in 67b65830c744fbcf5c8c31d8a9aa0b67730b2631feefb4efc803ed909b44d9e6
+15:17:58.814 [pool-2-thread-1] DEBUG net.thucydides.core.requirements.model.cucumber.CucumberParser - Found no Cucumber 4.2.6 class cucumber.runtime.model.FeatureLoader try Cucumber 4.2.0 
+15:17:58.814 [pool-2-thread-1] DEBUG net.thucydides.core.requirements.model.cucumber.CucumberParser - Found no Cucumber 4.2.0 class cucumber.runtime.model.FeatureLoader try Cucumber 2.x.x 
+15:17:58.823 [pool-2-thread-1] DEBUG net.thucydides.core.requirements.model.cucumber.CucumberParser - Found no Cucumber 4.2.6 class cucumber.runtime.model.FeatureLoader try Cucumber 4.2.0 
+15:17:58.824 [pool-2-thread-1] DEBUG net.thucydides.core.requirements.model.cucumber.CucumberParser - Found no Cucumber 4.2.0 class cucumber.runtime.model.FeatureLoader try Cucumber 2.x.x 
+15:17:58.830 [pool-2-thread-1] DEBUG net.thucydides.core.requirements.RequirementsTagProvider -  found:[Requirement{name='Sanity limpieza y aprovisionamiento de recursos', type='feature' parent = 'null', cardNumber='null'}, Requirement{name='Reno Repo masivo', type='feature' parent = 'null', cardNumber='null'}]
+15:17:58.840 [pool-2-thread-1] DEBUG net.thucydides.core.requirements.BaseRequirementsService - Requirement found for test outcome reno-repo control-[]: Optional[Requirement{name='Reno Repo masivo', type='feature' parent = 'null', cardNumber='null'}]
+15:17:58.845 [pool-2-thread-1] DEBUG net.thucydides.core.requirements.BaseRequirementsService - Requirement found for test outcome reno-repo control-[]: Optional[Requirement{name='Reno Repo masivo', type='feature' parent = 'null', cardNumber='null'}]
+15:17:59.068 [pool-2-thread-1] DEBUG net.thucydides.core.requirements.BaseRequirementsService - Requirement found for test outcome reno-repo control-[]: Optional[Requirement{name='Reno Repo masivo', type='feature' parent = 'null', cardNumber='null'}]
+15:17:59.070 [pool-2-thread-1] DEBUG net.thucydides.core.requirements.BaseRequirementsService - Requirement found for test outcome reno-repo control-[]: Optional[Requirement{name='Reno Repo masivo', type='feature' parent = 'null', cardNumber='null'}]
+15:17:59.251 [pool-2-thread-1] DEBUG net.thucydides.core.reports.html.HtmlAcceptanceTestReporter - Generating report in 67b65830c744fbcf5c8c31d8a9aa0b67730b2631feefb4efc803ed909b44d9e6_screenshots.html
+15:17:59.810 [pool-2-thread-1] DEBUG net.thucydides.core.reports.html.HtmlAcceptanceTestReporter - Generated report 67b65830c744fbcf5c8c31d8a9aa0b67730b2631feefb4efc803ed909b44d9e6_screenshots.html in 559 ms
+15:17:59.812 [pool-2-thread-1] DEBUG net.thucydides.core.reports.html.HtmlAcceptanceTestReporter - GENERATING HTML REPORT FOR Reno Repo masivo:reno-repo control in 67b65830c744fbcf5c8c31d8a9aa0b67730b2631feefb4efc803ed909b44d9e6.html in directory C:\RenoRepo\target\site\serenity  
+15:17:59.816 [pool-2-thread-1] DEBUG net.thucydides.core.reports.html.HtmlAcceptanceTestReporter - Generating report in 67b65830c744fbcf5c8c31d8a9aa0b67730b2631feefb4efc803ed909b44d9e6.html
+15:18:00.570 [pool-2-thread-1] DEBUG net.thucydides.core.reports.html.HtmlAcceptanceTestReporter - Generated report 67b65830c744fbcf5c8c31d8a9aa0b67730b2631feefb4efc803ed909b44d9e6.html in 754 ms
+15:18:00.571 [pool-2-thread-1] DEBUG net.thucydides.core.reports.ReportService - Processing test outcome Reno Repo masivo:reno-repo control done
+15:18:00.571 [Test worker] DEBUG net.thucydides.core.reports.ReportService - Shutting down executor service
+15:18:00.571 [Test worker] DEBUG net.thucydides.core.reports.ReportService - Reports generated in: 1791 ms
+15:18:00.756 [Test worker] DEBUG net.serenitybdd.core.photography.Darkroom - Closing darkroom
+15:18:00.756 [Darkroom Processing Line] DEBUG net.serenitybdd.core.photography.DarkroomProcessingLine - Darkroom processing line shutting down
 
 ?[31mFailed scenarios:?[0m
 ?[31msrc/test/resources/features/pagarEquipo.feature:7 ?[0m# reno-repo control
 
 1 Scenarios (?[31m1 failed?[0m)
 4 Steps (?[31m1 failed?[0m, ?[36m2 skipped?[0m, ?[32m1 passed?[0m)
-1m46,518s
+2m20,659s
 
-java.lang.AssertionError: la linea no tiene imei
-Expected: a string containing "883339511718342"
-     but: was ""
-	at org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:20)
-	at com.indra.actions.ConsultarLineaActions.matcherIMEI(ConsultarLineaActions.java:69)
-	at com.indra.actions.ConsultarLineaActions.consultarEnPantallaUnicaResultadoFinal(ConsultarLineaActions.java:36)
-	at com.indra.steps_definitions.SanitySteps.seHaceLaPosventaRenoRepo(SanitySteps.java:88)
+java.lang.IndexOutOfBoundsException: Index: 0, Size: 0
+	at java.util.ArrayList.rangeCheck(ArrayList.java:659)
+	at java.util.ArrayList.get(ArrayList.java:435)
+	at com.indra.steps_definitions.SanitySteps.seHaceLaPosventaRenoRepo(SanitySteps.java:55)
 	at ?.se hace la posventa reno repo(src/test/resources/features/pagarEquipo.feature:9)
 
 ]]></system-out>

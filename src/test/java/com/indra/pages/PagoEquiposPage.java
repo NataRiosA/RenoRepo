@@ -53,6 +53,9 @@ public class PagoEquiposPage extends PageObject {
     @FindBy(id = "Order:btnPagarTotalFinal")
     WebElementFacade btnPagarTotal;
 
+    @FindBy(xpath = "(//li[@class='infomsg'])[1]")
+    WebElementFacade resultadoDelPago;
+
 
 
     public WebElementFacade getConsultas() {
@@ -105,5 +108,9 @@ public class PagoEquiposPage extends PageObject {
 
     public WebElementFacade getBtnPagarTotal() {
         return btnPagarTotal;
+    }
+
+    public WebElementFacade getResultadoDelPago() {
+        return resultadoDelPago;
     }
 }

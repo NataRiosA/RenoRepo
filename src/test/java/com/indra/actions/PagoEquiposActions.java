@@ -60,7 +60,7 @@ public class PagoEquiposActions extends PagoEquiposPage {
                 clickBotonPagar();
                 scrollDown("800");
                 clickBotonPagoTotal();
-
+                esperaMensajeConfirmacionPagoDelEquipo();
                 waitABit(5000);
             }
             else{
@@ -128,8 +128,9 @@ public class PagoEquiposActions extends PagoEquiposPage {
     }
 
 
-    public void validaElIdItem(){
-
+    public void esperaMensajeConfirmacionPagoDelEquipo(){
+        getResultadoDelPago().waitUntilVisible();
+        System.out.println(getResultadoDelPago().getText());
     }
 
 
